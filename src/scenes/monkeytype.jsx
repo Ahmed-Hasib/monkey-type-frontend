@@ -15,7 +15,7 @@ const MonkeyType = () => {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
 
-    const totalTime = 10;
+    const totalTime = 20;
 
     const [paragraph, setParagraph] = useState("");
     const [typed, setTyped] = useState("");
@@ -98,9 +98,6 @@ const MonkeyType = () => {
     const isComplete = typed.length === paragraph.length || isLocked;
     const result = isComplete ? getResults() : null;
 
-
-
-
     return (
         <Box
             display="flex"
@@ -138,9 +135,6 @@ const MonkeyType = () => {
                 </Box>
             ) : (
                 <>
-
-
-
                     <Box
                         sx={{
                             fontSize: "40px",
@@ -246,8 +240,6 @@ const MonkeyType = () => {
                         }}
                     >
 
-
-
                     </Box>
                     <Box sx={{ width: "100%", mt: 4 }}>
                         <Typography variant="h6" gutterBottom textAlign='start'>
@@ -289,9 +281,6 @@ const MonkeyType = () => {
                                     </CardContent>
                                 </Card>
                             </Grid>
-
-
-
                             <Grid item xs={12} sm={6} md={3} width="30%" >
                                 <Card sx={{ textAlign: "end", borderRadius: 2, background: "none" }} >
                                     <CardContent >
@@ -313,18 +302,8 @@ const MonkeyType = () => {
                                     </CardContent>
                                 </Card>
                             </Grid>
-
-
-
-
-
-
-
-
                         </Grid>
                     </Box>
-
-
                 </Box>
             )}
         </Box>

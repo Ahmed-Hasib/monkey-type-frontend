@@ -36,7 +36,7 @@ function App() {
           <main className="content">
             <Topbar/>
             <Routes>
-              <Route path='/' element={<Dashboard/>} />
+              <Route path='/' element={<MonkeyType/>} />
               <Route path='/monkey-type' element={<MonkeyType/>} />
               <Route path='/team' element={<Team/>} />
               <Route path='/invoices' element={<Invoices/>} />
